@@ -4,9 +4,9 @@
 // 8/24/2026
 
 #include <iostream>
+using namespace std; 
 
 int main() {
-using namespace std; 
 
     //std :: cout << 
     string name = "Jane Smith";
@@ -21,6 +21,4 @@ using namespace std;
     // calc total price
     double totalPrice = (double) apples * pricePerApple;
     cout << " Total price is: $ " <<totalPrice << endl; 
-
-
 }

@@ -49,7 +49,7 @@ int main() {
     cout << setw(20) << "Tax:  " << setw(10) << tax_amount << endl;
     cout << line << endl;
     cout << setw(20) << "Total: " << setw(10) << total << endl;
-    cout << "Thank You Come Again" << endl << endl;
+    cout << setw(30) << "Thank You Come Again" << endl << endl;
 
 
     return 0; //no errors

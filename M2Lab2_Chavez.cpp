@@ -11,7 +11,6 @@ using namespace std;
 
 int main() {
 
-
     //declare variables
     // got to calc tax before getting total
 
@@ -24,28 +23,26 @@ int main() {
     //INPUT
     //nothing, they are picking one sandwich
     //for now hard code some values
-    meal_name = "Talan-wich";
+    meal_name = "Sand-wich";
     meal_price = 5.99;
     tax_rate = 0.08; //8%
 
-
     //PROCESSING
-
-
-    
-    //OUTPUT
-
-    //doing tax math
-    //Meal*tax rate = tax amount
     tax_amount = meal_price * tax_rate;
     total = meal_price + tax_amount;
 
-    cout << fixed << setprecision(2); //making sure total is 2 decimal places 
+    //Total needs to be two decimal places
 
 
-    cout << "Price: $" << meal_price << endl;
-    cout << "Tax: $" << tax_amount << endl;
-    cout << "Total: $" << total << endl;
+    //OUTPUT
+    //TODO PRINT LIKE RECEIPT
+    string line = "-------------------------------------";
+    cout << line << endl;
+    cout << meal_name << ": " << meal_price << endl;
+    cout << "Tax:  " << " " << tax_amount << endl;
+    cout << line << endl;
+    cout << "Total: " << total << endl;
+    cout << "Thank You Come Again" << endl << endl;
 
 
     return 0; //no errors

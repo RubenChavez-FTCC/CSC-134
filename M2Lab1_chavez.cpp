@@ -20,9 +20,10 @@ int main() {
     const double CHARGE_PERCUBIC_FOOT = 0.50;
 
     double length, width, height; //can declare multiple 
-    double crate_cost;
-    double crate_charge;
-    double profit;
+    double volume; //cu ft
+    double crate_cost; //usd
+    double crate_charge; //usd
+    double profit; //usd
     
 
     //get the dimension from user
@@ -36,11 +37,20 @@ int main() {
 
 
     // calc the vol, cost, charge, and profit
+    volume = length*width*height;
 
+    crate_cost = COST_PERCUBIC_FOOT * volume;
+    crate_charge = CHARGE_PERCUBIC_FOOT * volume;
 
+    profit = crate_charge - crate_cost;
 
     //format and display it for user
-
+    cout << setprecision(2) << fixed;
+    cout << "A crate measuring " << length << " x " << height << " x " << width << " ft. " << endl;
+    cout << "Is volume: " << volume << " cubic feet " << endl;
+    cout << "Sells for:    $" << crate_charge << endl;
+    cout << "Profit:       $" << profit << endl;
+    cout << profit << endl;
 
 
 

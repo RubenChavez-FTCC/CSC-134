@@ -87,7 +87,7 @@ void question4(){
     int vistors; 
 
     //how many pizza & how many slices, how many people
-    cout << "How many boxes did you order? " << endl;
+    cout << "How many pizzas did you order? " << endl; //tell user theres 8 silces 
     cin >> pizza_boxes;
 
     cout << "How many people are coming? " << endl;
@@ -99,7 +99,7 @@ void question4(){
     int pizza_leftover = pizza_slice - pizza_buddy; 
 
     // OUTPUT
-    cout << "You have " << pizza_slice << " pizza slices and have " << vistors << "friends over, so you have " << pizza_leftover << " slices for left overs. " << endl;
-
+    cout << "You have " << pizza_slice << " pizza slices and have " << vistors << " friends over, so you have " << pizza_leftover << " slices for left overs. " << endl;
+    
 
 }

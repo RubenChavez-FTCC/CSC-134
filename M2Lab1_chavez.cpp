@@ -6,17 +6,14 @@
 
 
 #include <iostream>
-#include <iomanip>
+#include <iomanip> //setprecision and stuff 
 
 using namespace std;
 
 int main() {
 
     // Declare const and varis
-
-
-
-    const double COST_PERCUBIC_FOOT = 0.23;
+    const double COST_PERCUBIC_FOOT = 0.23;  //const = Constants that never change
     const double CHARGE_PERCUBIC_FOOT = 0.50;
 
     double length, width, height; //can declare multiple 
@@ -28,10 +25,13 @@ int main() {
 
     //get the dimension from user
     cout << "Please enter the crate dimensions " << endl;
+    //Could put this into one question using cin 
     cout << "Crate length: ";
     cin >> length;
+
     cout << "Crate width: ";
     cin >> width;
+
     cout << "Crate height: ";
     cin >> height;
 
@@ -46,14 +46,12 @@ int main() {
 
     //format and display it for user
     cout << setprecision(2) << fixed;
-    cout << "A crate measuring " << length << " x " << height << " x " << width << " ft. " << endl;
-    cout << "Is volume: " << volume << " cubic feet " << endl;
+    cout << "A crate measuring " << length << " x " << width << " x " << height << " ft. " << endl;
+
+    cout << "Its volume: " << volume << " cubic feet " << endl;
     cout << "Sells for:    $" << crate_charge << endl;
     cout << "Profit:       $" << profit << endl;
-    cout << profit << endl;
-
-
-
+   
     return 0; //no errors 
 
 }

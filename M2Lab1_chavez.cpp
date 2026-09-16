@@ -43,9 +43,11 @@ int main() {
     crate_charge = CHARGE_PERCUBIC_FOOT * volume;
 
     profit = crate_charge - crate_cost;
+    
 
     //format and display it for user
-    cout << setprecision(2) << fixed;
+    cout << setprecision(2) << fixed;  //makes it so its 2 decimal for all values 
+
     cout << "A crate measuring " << length << " x " << width << " x " << height << " ft. " << endl;
 
     cout << "Its volume: " << volume << " cubic feet " << endl;

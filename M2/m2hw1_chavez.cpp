@@ -18,10 +18,10 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
-// question1(); //done
+ question1(); //done
 // question2(); //done
 // question3(); //done
- question4(); 
+// question4(); 
 }
 
 
@@ -29,8 +29,6 @@ void question1(){
     cout << "Question 1 goes here" << endl;
 
     //declare varis
-        
-
     string name; 
     string transaction;
     int enter_PIN = 1234;
@@ -53,7 +51,7 @@ void question1(){
 
         cout << "The account " << name << " has $" << starting_bal << ". In the account 1***. " << endl;
         
-         cout << "----------------------------------------------------------------" << endl;
+        cout << "----------------------------------------------------------------" << endl;
 
         // depo and with part
         double deposit_amo;
@@ -64,10 +62,10 @@ void question1(){
         cout << "How much would you like to withdrawal? $:" << endl;
         cin >> with_amo;
 
-         cout << "----------------------------------------------------------------" << endl;
+        cout << "----------------------------------------------------------------" << endl;
         
 //processing, getting final bal and pin again
-    double final_bal = starting_bal + deposit_amo - with_amo; //one time check not constanly 
+    double final_bal = starting_bal + deposit_amo - with_amo; //one time check it is not constanly checking rember that
 
     cout << "Before the transaction what is your pin number? Please type a 4 digit number" << endl;  
     cin >> enter_PIN;
@@ -147,8 +145,6 @@ void question3(){
     // OUTPUT
     cout << "You have " << pizza_slice << " pizza slices and have " << vistors << " friends over, so you have " << pizza_leftover << " slices for left overs. " << endl;
     
-
-
 }
 void question4(){
     cout << "Question 4 goes here" << endl;

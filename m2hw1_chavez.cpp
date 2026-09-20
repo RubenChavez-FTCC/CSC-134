@@ -18,10 +18,10 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
- question1(); //done
+// question1(); //done
 // question2(); //done
 // question3(); //done
-// question4(); 
+ question4(); 
 }
 
 
@@ -58,10 +58,10 @@ void question1(){
         // depo and with part
         double deposit_amo;
         double with_amo;
-        cout << "How much would you like to deposit? " <<endl;
+        cout << "How much would you like to deposit? $:" <<endl;
         cin >> deposit_amo;
 
-        cout << "How much would you like to withdrawal? " << endl;
+        cout << "How much would you like to withdrawal? $:" << endl;
         cin >> with_amo;
 
          cout << "----------------------------------------------------------------" << endl;
@@ -123,8 +123,6 @@ void question2(){
     cout << "Profit:       $" << profit << endl;
    
 }
-
-    
 void question3(){
     cout << "Question 3 goes here" << endl;
 
@@ -154,4 +152,18 @@ void question3(){
 }
 void question4(){
     cout << "Question 4 goes here" << endl;
+
+    //declare varis 
+
+    string school = " Let's go FTCC ";
+    string team = " Let's go Trojans ";
+  
+ //Cheer part 
+    cout << school << '\n' << school << '\n' << school << endl;
+    cout << team << endl;
+
+
+    
+
+
 }

@@ -15,8 +15,6 @@ void question2();
 void question3();
 void question4();
 
-
-
 int main() {
     //run only questions you finish by moving the comments //
 // question1(); //done

@@ -16,7 +16,7 @@ int main() {
     //input ask L and W for both 
 
     cout << "First rectangle: " << endl;
-    cout << "\tlength? ";
+    cout << "\tlength? "; // "\t" adds a tab space to it 
     cin >> length1;
     cout << "\twidth? ";
     cin >> width1; 
@@ -37,10 +37,18 @@ int main() {
     cout << "Rectangle 2 is area : " << area2 << endl;
 
     //tell the user which one is larger more area
+    // "if" checks for true or false
+    // greater than or equal is >= and <= and == and < and > 
 
-    
-
-
+    if (area1 > area2) {
+        cout << "Rectangle 1 is larger. " << endl;
+    }
+    else if (area2 > area1 ) { 
+        cout << "Rectangle 2 is larger. " << endl;
+    }
+    else {
+        cout << "They are the same size." << endl;   
+    }
 
     return 0;
 }

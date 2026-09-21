@@ -21,7 +21,7 @@ int main() {
  question1(); //done
 // question2(); //done
 // question3(); //done
-// question4(); 
+// question4(); //done
 }
 
 
@@ -36,7 +36,7 @@ void question1(){
  
     cout << fixed << setprecision(2); 
    
-//ask for name, starting balance, deposit or withdrawal
+    //ask for name, starting balance, deposit or withdrawal
 
         cout << "What is your account name? " << endl;
         cin >> name;
@@ -64,7 +64,7 @@ void question1(){
 
         cout << "----------------------------------------------------------------" << endl;
         
-//processing, getting final bal and pin again
+    //processing, getting final bal and pin again
     double final_bal = starting_bal + deposit_amo - with_amo; //one time check it is not constanly checking rember that
 
     cout << "Before the transaction what is your pin number? Please type a 4 digit number" << endl;  

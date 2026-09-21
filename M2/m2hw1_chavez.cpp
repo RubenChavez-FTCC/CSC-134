@@ -3,7 +3,8 @@
 //chavez ruben
 //9/16/2026
 
-
+/* Gold tier, answering all 4 questions 
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -18,7 +19,7 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
- question1(); //done
+// question1(); //done
 // question2(); //done
 // question3(); //done
 // question4(); //done
@@ -101,7 +102,6 @@ void question2(){
     cout << "Crate height: ";
     cin >> height;
 
-
     // calc the vol, cost, charge, and profit
     volume = length*width*height;
 
@@ -110,7 +110,6 @@ void question2(){
 
     profit = crate_charge - crate_cost;
     
-
     //format and display it for user
     cout << setprecision(2) << fixed;  //makes it so its 2 decimal for all values 
 
@@ -119,11 +118,9 @@ void question2(){
     cout << "Its volume: " << volume << " cubic feet " << endl;
     cout << "Sells for:    $" << crate_charge << endl;
     cout << "Profit:       $" << profit << endl;
-   
 }
 void question3(){
     cout << "Question 3 goes here" << endl;
-
 
     //pizza party 
     //declare vari
@@ -154,12 +151,8 @@ void question4(){
     string school = " Let's go FTCC ";
     string team = " Let's go Trojans ";
   
- //Cheer part 
+    //Cheer part 
     cout << school << '\n' << school << '\n' << school << endl;
     cout << team << endl;
-
-
-    
-
 
 }

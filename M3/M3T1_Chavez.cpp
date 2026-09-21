@@ -38,7 +38,10 @@ int main() {
 
     //tell the user which one is larger more area
     // "if" checks for true or false
-    // greater than or equal is >= and <= and == and < and > and != (not equal)
+    // greater than or equal is >= 
+    // less than <=  
+    // equal to == and less than < and greater than > 
+    // != (not equal)
 
     if (area1 > area2) {
         cout << "Rectangle 1 is larger. " << endl;

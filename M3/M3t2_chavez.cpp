@@ -4,8 +4,6 @@
 // making carps table 
 
 
-
-
 #include <iostream>
 #include <cstdlib> //for random number
 #include <ctime> // for time()
@@ -31,6 +29,8 @@ int main() {
 
     //processing win or lose
     // || is OR   && is AND
+    // cant do == 7|| 11 needs to be ==7|| total == 11
+    
     if (total == 7 || total == 11) {
         cout << "You win! " << endl;
     }

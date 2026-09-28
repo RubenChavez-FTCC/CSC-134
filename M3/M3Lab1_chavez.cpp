@@ -1,5 +1,5 @@
 // CSC 134 
-// m3lab 1 menys and choices
+// m3lab 1 menus and choices
 // Ruben Chavez
 // 9/28/2026
 
@@ -56,7 +56,7 @@ void choose2(){
     cin >> choice; 
 
     if (1==choice){
-        cout << "As Talan is drving he speeds up on a turn, he hits a bump and starts to leak gas. " << endl;
+        cout << "As Talan is drving he speeds up on a turn, he hits a bump and starts to leak gasoline. " << endl;
         cout << "You don't make it anywhere." << endl;
     }
     else if (2==choice){
@@ -64,7 +64,7 @@ void choose2(){
         cout << "You head back happy.  " << endl;
     }
     else {
-        cout << "I'm sorry, that is not a valid choice and Talan dies " << endl;
+        cout << "I'm sorry, that is not a valid choice and Talan explodes " << endl;
     }
 
 }

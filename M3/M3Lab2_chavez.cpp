@@ -42,7 +42,7 @@ int main() {
         letter_grade = 'F';
     }
 
-
+    
     //output
     cout <<"Number Grade: " << num_grade << endl;
     cout << "Letter Grade: " << letter_grade << endl;

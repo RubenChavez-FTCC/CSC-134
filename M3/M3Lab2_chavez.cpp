@@ -24,10 +24,28 @@ int main() {
     cin >> num_grade;
     cout << "you entered: " << num_grade << endl;
 
-    
+    // cal the letter grade
+    // not doing nesting
+    if (num_grade >= 90){
+        letter_grade = 'A';
+    }
+    else if (num_grade >= 80){
+        letter_grade = 'B';
+    }
+    else if (num_grade >=70){
+        letter_grade = 'C';
+    }
+    else if (num_grade >=60){
+        letter_grade = 'D';
+    }
+    else if (num_grade <=59){
+        letter_grade = 'F';
+    }
 
 
-
+    //output
+    cout <<"Number Grade: " << num_grade << endl;
+    cout << "Letter Grade: " << letter_grade << endl;
 
 
     return 0;

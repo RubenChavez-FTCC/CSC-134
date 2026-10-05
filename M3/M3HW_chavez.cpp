@@ -47,7 +47,7 @@ void question1(){
         cout << "Aw, next time. " << endl;
     }
     else {
-        cout << "Sorry thats not an answer. " << endl;
+        cout << "Then how about we get some eats? " << endl;
     }
 
     return;

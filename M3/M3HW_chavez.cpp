@@ -20,10 +20,10 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
-// question1(); //done
+ question1(); 
 // question2(); 
  question3(); //done
-// question4(); //done
+ question4(); //done
 }
 
 
@@ -39,7 +39,7 @@ void question1(){
     cin >> answer;
     
 
-// always 2 ==
+    // always 2 ==
     if (answer == "yes"){
         cout << "Alright lets go, alright go, go! " << endl;
     }
@@ -61,6 +61,8 @@ void question2(){
 
 
 }
+
+
 
 // question 3 has choose1 and 2 
 void question3(){
@@ -125,6 +127,8 @@ void choose2(){
 
 
 }
+
+
 
 
 //question4

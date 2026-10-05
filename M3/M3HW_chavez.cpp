@@ -61,7 +61,9 @@ void question2(){
     // got to calc tax before getting total
 
     string meal_name; 
-    double meal_price = 5.99;       //USD everything
+    string combo_name;
+    double meal_price = 5.99; 
+    double combo_price = 15.99;      //USD everything
     double tax_rate = 0.08;         //percent
     double tax_amount;
     double total;   // meal + tax usd
@@ -70,16 +72,28 @@ void question2(){
     double tip;                
     double DINE_total; // meal + tax + tip
     string answer;
+    string mealchoice;
 
     //INPUT
 
-        cout << "Welcome to KFT, Kentucky Fried Talan.  Is this order for take-out or dine-in?" <<endl;
+        cout << "Welcome to KFT, Kentucky Fried Talan. " << endl;
+        cout << "Would you like a Talan-wich for 5.99 or a Talan-combo for 15.99? " << endl;
+        cout <<"Please type Talan-wich or Talan-combo." << endl;
+        cin >> mealchoice;
+
+        //now fix names and and if for Talan combo 
+        //maybe nesting for if wich or combo and for both have if dine or take out
+        // might have to redo variables to pick a meal then pick a location option
+        // maybe string loc-choice, dine_in, take_out
+        
+        
+        cout << "Is this order for take-out or dine-in?" <<endl;
         cout << "Please type 1 for take-out or 2 for dine-in." <<endl;
         cin >> answer;
 
     //nothing, they are picking one sandwich
-    //for now hard code some values
     meal_name = "Talan-wich";
+    combo_name = "Talan-combo";
     meal_price = 5.99;
     tax_rate = 0.08; //8%
     tip_rate = 0.15; //15%
@@ -90,10 +104,11 @@ void question2(){
     tip = meal_price * tip_rate;
     DINE_total = total + tip;
 
-    //Total needs to be two decimal places
 
     //OUTPUT
     //TODO PRINT LIKE RECEIPT
+
+    cout << "For a " << mealchoice << ". Here is your recipt: " <<endl; 
 
      string line = "-------------------------------------";
     cout << line << endl;

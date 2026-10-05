@@ -20,10 +20,10 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
- question1(); //done
-// question2(); 
- question3(); //done
- question4(); //done
+// question1(); //done
+ question2(); 
+// question3(); //done
+// question4(); //done
 }
 
 
@@ -56,6 +56,79 @@ void question1(){
 
 void question2(){
     cout << "Question 2 goes here" << endl;
+
+ //declare variables
+    // got to calc tax before getting total
+
+    string meal_name; 
+    double meal_price = 5.99;       //USD everything
+    double tax_rate = 0.08;         //percent
+    double tax_amount;
+    double total;                   // meal + tax usd
+    string answer;
+
+    //INPUT
+
+        cout << "Welcome to KFT Kentucky Fried Talan. " <<endl;
+        cout << "Is this order take-out or dine-in ? Please type 1 for take-out or 2 for dine-in?" <<endl;
+        cin >> answer;
+
+    //nothing, they are picking one sandwich
+    //for now hard code some values
+    meal_name = "Talan-wich";
+    meal_price = 5.99;
+    tax_rate = 0.08; //8%
+
+    //PROCESSING
+    tax_amount = meal_price * tax_rate;
+    total = meal_price + tax_amount;
+
+    //Total needs to be two decimal places
+
+    //OUTPUT
+    //TODO PRINT LIKE RECEIPT
+
+     string line = "-------------------------------------";
+    cout << line << endl;
+
+    if (answer == "1"){ 
+        
+    //Set width of colummns and 2 decimal price
+
+    cout << setprecision(2) << fixed;       //requires #include <iomanip> for decimal and colummns
+    
+    cout << setw(20) << meal_name << setw(10) << meal_price << endl;
+    cout << setw(20) << "Tax:  " << setw(10) << tax_amount << endl;
+    cout << line << endl;
+    cout << setw(20) << "Total: " << setw(10) << total << endl;
+    cout << setw(30) << "Thank You Come Again" << endl << endl;
+    }
+
+   
+   else if (answer == "2"){
+    cout << setprecision(2) << fixed;       
+    
+    cout << setw(20) << meal_name << setw(10) << meal_price << endl;
+    cout << setw(20) << "Tax:  " << setw(10) << tax_amount << endl;
+    cout << line << endl;
+    cout << setw(20) << "Total: " << setw(10) << total << endl;
+    cout << setw(30) << "Thank You Come Again" << endl << endl;
+
+   }
+
+   else {
+    cout << "Not a valid answer." << endl;
+   }
+
+    
+
+
+
+
+
+
+
+
 
 
 

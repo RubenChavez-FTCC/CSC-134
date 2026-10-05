@@ -64,13 +64,17 @@ void question2(){
     double meal_price = 5.99;       //USD everything
     double tax_rate = 0.08;         //percent
     double tax_amount;
-    double total;                   // meal + tax usd
+    double total;   // meal + tax usd
+
+    double tip_rate;
+    double tip;                
+    double DINE_total; // meal + tax + tip
     string answer;
 
     //INPUT
 
-        cout << "Welcome to KFT Kentucky Fried Talan. " <<endl;
-        cout << "Is this order take-out or dine-in ? Please type 1 for take-out or 2 for dine-in?" <<endl;
+        cout << "Welcome to KFT, Kentucky Fried Talan.  Is this order for take-out or dine-in?" <<endl;
+        cout << "Please type 1 for take-out or 2 for dine-in." <<endl;
         cin >> answer;
 
     //nothing, they are picking one sandwich
@@ -78,10 +82,13 @@ void question2(){
     meal_name = "Talan-wich";
     meal_price = 5.99;
     tax_rate = 0.08; //8%
+    tip_rate = 0.15; //15%
 
     //PROCESSING
     tax_amount = meal_price * tax_rate;
     total = meal_price + tax_amount;
+    tip = meal_price * tip_rate;
+    DINE_total = total + tip;
 
     //Total needs to be two decimal places
 
@@ -110,8 +117,9 @@ void question2(){
     
     cout << setw(20) << meal_name << setw(10) << meal_price << endl;
     cout << setw(20) << "Tax:  " << setw(10) << tax_amount << endl;
+    cout << setw(20) << "Tip:  " << setw(10) << tip << endl;
     cout << line << endl;
-    cout << setw(20) << "Total: " << setw(10) << total << endl;
+    cout << setw(20) << "Total: " << setw(10) << DINE_total << endl;
     cout << setw(30) << "Thank You Come Again" << endl << endl;
 
    }
@@ -121,17 +129,6 @@ void question2(){
    }
 
     
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

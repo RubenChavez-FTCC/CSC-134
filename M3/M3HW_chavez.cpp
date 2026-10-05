@@ -20,7 +20,7 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
- question1(); 
+ question1(); //done
 // question2(); 
  question3(); //done
  question4(); //done
@@ -32,7 +32,7 @@ void question1(){
     cout << "Question 1 goes here" << endl;
 
     cout << "Hello I am a virtual person, I am called Valan" << endl;
-    cout << "Would you like to go on a virtual drive? Please type yes or no. " << endl;
+    cout << "Are virtual people good listners? Please type yes or no." << endl;
 
     //vari
     string answer; 
@@ -41,13 +41,13 @@ void question1(){
 
     // always 2 ==
     if (answer == "yes"){
-        cout << "Alright lets go, alright go, go! " << endl;
+        cout << "Indeed I do listen. " << endl;
     }
     else if (answer == "no"){
-        cout << "Aw, next time. " << endl;
+        cout << "Well, I couldn't hear you. " << endl;
     }
     else {
-        cout << "Then how about we get some eats? " << endl;
+        cout << "I will get better at listening for that. " << endl;
     }
 
     return;

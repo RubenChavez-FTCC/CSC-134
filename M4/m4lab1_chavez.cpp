@@ -18,7 +18,7 @@ int main (){
     int height = 0;
     while (width <= 0 || height <= 0){
 
-     cout << "Enter rectangle width: ";
+    cout << "Enter rectangle width: ";
     cin >> width;
     cout << "Enter rectangle height: ";
     cin >> height;
@@ -31,12 +31,6 @@ int main (){
     }
 
     }
-    
-    
-
-
-  
-
 
     cout << "Part 1: " << endl;
 
@@ -51,12 +45,9 @@ for (int j = 0; j < height; j++) {
 
 }
 
-
 cout << "Here is your rectangle " << width << " by " << height << endl;
-
 // full rec print height number of rows 
 //each row is width long 
-
 for (int j = 0; j < height; j++) {
 
     for (int i=0; i < width; i++){

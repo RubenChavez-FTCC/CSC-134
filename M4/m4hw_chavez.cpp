@@ -14,9 +14,21 @@ int main (){
 // vari
 int table = 0;
 int i = 1;
+while (table <= 0){
 
 cout << "Enter a number between 1-12" << endl;
 cin >> table;
+ if (table <= 0 ){
+        cout << "Number cannot be zero or negative. " << endl;
+    }
+// error here 
+if (table > 12){
+    cout << "Number cannot be greater than 12. " << endl;
+}
+
+}
+
+
 while (i <= 12){
 
     cout << table << " times " << i << " is " << table*i << "." <<endl;

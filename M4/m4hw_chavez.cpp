@@ -22,11 +22,9 @@ cin >> table;
         cout << "Number cannot be zero or negative. " << endl;
     }
 
-
  else if (table >= 13){
     cout << "Number cannot be greater than 12. " << endl;
 }
-
 
 }
 

@@ -17,10 +17,14 @@ void printAnswerLine(int number, int squared); // prints a full line of the tabl
 int main (){
     cout << "Table of Squares Program " << endl;
 
+    int input;
+    cout <<"In input the number" << endl;
+    cin >> input;
+
     cout << endl << "Number   Number Squared " << endl;
     cout << "-----------------------" << endl;
-    int MIN_NUM = 1;
-    int MAX_NUM = 10;
+    int MIN_NUM = input;
+    int MAX_NUM = input + 10;
 
     for (int number = MIN_NUM; number <= MAX_NUM; number++) {
         int squared = square(number);

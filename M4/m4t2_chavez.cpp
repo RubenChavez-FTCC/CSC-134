@@ -16,24 +16,21 @@ void printAnswerLine(int number, int squared); // prints a full line of the tabl
 
 int main (){
     cout << "Table of Squares Program " << endl;
-
-    int input;
-    cout <<"In input the number" << endl;
-    cin >> input;
-
     cout << endl << "Number   Number Squared " << endl;
     cout << "-----------------------" << endl;
-    int MIN_NUM = input;
-    int MAX_NUM = input + 10;
+    int MIN_NUM = 1;
+    int MAX_NUM = 10;
 
+        //MIN num starts loop  |<= keeps looping till MAX | number ++ adds 1 after each pass 
     for (int number = MIN_NUM; number <= MAX_NUM; number++) {
-        int squared = square(number);
-        printAnswerLine(number, squared);
+
+        int squared = square(number); //calcuates the square and stores it in intsquared
+
+        printAnswerLine(number, squared); // now number = num and squared = num*num in format 
     }
     
     return 0;
 }
-
 
 //Define functions here 
 int square(int num){
@@ -48,6 +45,6 @@ int square(int num){
 void printAnswerLine(int number, int squared){
     //print oneline of the table -- input
     // example 3    9
-    cout << number << " \t " << squared << endl;
+    cout << number << " squared is " << squared << endl;
 
 }

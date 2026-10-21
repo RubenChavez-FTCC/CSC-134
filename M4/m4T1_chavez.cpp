@@ -16,7 +16,7 @@ int main (){
         count++; //increment AFTER showing the number
     }
 
-    // table of sqaures (part 2)
+    // table of squares (part 2)
     const int MIN_NUM = 1;
     const int MAX_NUM = 10;
 
@@ -28,6 +28,7 @@ int main (){
         i++;
     }
 
+    return 0;
 }
 
 

@@ -25,6 +25,8 @@ void choice_go_home();
 // TODO: add your new prototypes here
 
 void choice_climb_window();
+void choice_up_stairs();
+void choice_down_stairs();
 
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
@@ -89,6 +91,7 @@ void choice_front_door() {
   }
 }
 
+
 void choice_back_door() {
   cout << "The Back door is borded up. " << endl;
   cout << "You can't get in that way." << endl;
@@ -110,13 +113,28 @@ void choice_back_door() {
 
 void choice_climb_window() {
 
-    cout << "You climb through the window, and scratch your arm on the way in." << endl;
-    cout << "You are now inside the house." << endl;
+    cout << "You climb through the window, and hurt your arm on the way in." << endl;
+    cout << "You are bleeding bad, but you are inside the house." << endl;
     cout << "It is dark and you can't see clearly." << endl;
-     
+    cout << "You move forward and see two staircases, one going up and one going down." << endl;
+    cout << "Do you: " << endl;
+    cout << "1. Go upstairs" << endl;
+    cout << "2. Go downstairs" << endl;
+    int choice = 0;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+    choice_up_stairs();
+    } else if (2== choice){
+      choice_down_stairs();
+    }     
 
 }
 
+void choice_up_stairs() {
+  cout << "You go upstairs, your arm is still bleeding and you feel dizzy." << endl;
+  cout << "You see a a blur at the end of the hallway" << endl;
+}
 
 
 

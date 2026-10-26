@@ -1,0 +1,121 @@
+:: StoryTitle
+m5lab1
+
+
+:: StoryData
+{
+  "ifid": "52638F68-0221-45A1-9677-2E850C931FC9",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "menu- front of house",
+  "zoom": 1
+}
+
+
+:: Goes downstairs {"position":"1250,350","size":"100,100"}
+In a basement of some sorts 
+arm starts to bleed more, you see a first aid kit 
+wrap up your arm 
+1. [[go back up]] 
+2. [[explore further ]] 
+
+
+:: Goes upstair_ending {"position":"1200,75","size":"100,100"}
+Arm starts to bleed out more, feel dizzy
+sees something 
+you try backing up slowly you mistep and fall down the stairs
+you are helpless to get up, you stay there forever the house not letting you leave
+
+
+:: Quit_ending {"position":"1175,675","size":"100,100"}
+You leave the house might be for the better.
+
+
+:: Try the front door {"position":"800,475","size":"100,100"}
+its locked
+
+1. [[go back door]] 
+2. [[Quit_ending]] 
+
+
+:: back door {"position":"1625,25","size":"100,100"}
+You start your way to the back door 
+Your breathing gets harder every step takes more effort 
+You can hear the wind from the window 
+
+
+
+:: explore further\  {"position":"1400,375","size":"100,100"}
+You move through cobwebs and dusty boxes piled up 
+you reach the end of the room 
+a symbol is drawn on the wall it makes you uneasy
+1.[[wipe it off_ending]]
+2. [[go back up]] 
+
+
+
+
+:: front door {"position":"1800,150","size":"100,100"}
+You rush to the door.
+It's hard to breathe.
+the door won't open.
+you bash the door.
+nothing budges.
+You are tired, breathing takes more effort than normal.
+
+tiredness overcomes you.
+you slide down on the door.
+you fall alseep.
+The House doesn't let you leave.
+
+
+:: go back door {"position":"875,275","size":"100,100"}
+window is broken
+
+1. [[go through window ]] 
+2. [[Quit_ending]] 
+
+
+:: go back up {"position":"1475,150","size":"100,100"}
+You are on the first floor, still can't see well.
+You start to breathe heavily 
+you need to get out 
+do you go to the front door or back
+[[front door]]
+[[back door]]
+
+
+
+
+
+
+
+:: go through window\  {"position":"1075,225","size":"100,100"}
+hurts arm, sees 2 staircases
+
+1. [[Goes upstair_ending]] 
+2. [[Goes downstairs]] 
+
+
+:: menu- front of house {"position":"575,575","size":"100,100"}
+"1. [[Try the front door]]" 
+ "2. [[go back door]] Sneak around back" 
+"3. Forget it, and go home" [[Quit_ending]] 
+ "4. quit game 
+
+
+
+:: wipe it off_ending {"position":"1550,500","size":"100,100"}
+you wipe the symbol.
+you feel normal.
+you walk back.
+you start to breathe heavy
+
+It's hard to breathe now
+you stop.
+you can't move your body.
+you lie down, compelled to lie still.
+The house doesn't let you leave.
+You can't leave your body.
+
+

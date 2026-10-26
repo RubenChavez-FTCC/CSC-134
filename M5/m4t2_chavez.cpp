@@ -49,8 +49,9 @@ void printAnswerLine(int number, int squared){
     //print oneline of the table -- input
     // example 3    9
     cout << number << " squared is " << squared << endl;
-
+    
 }
+
 
 // number = minNUM which is 3 in this case
 // then sqaured = sqaure of number(minNUM=3) -> stores it 

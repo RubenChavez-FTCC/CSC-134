@@ -65,7 +65,7 @@ void main_menu() {
   } else if (2 == choice) {
     // call choice 2 here
   } else if (3 == choice) {
-    // call choice 3 here
+      choice_go_home();
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -141,7 +141,9 @@ void choice_up_stairs() {
 
 
 void choice_go_home() {
-  cout << "TODO: Write something here" << endl;
+  cout << "You cut your losses, you had a bad feeling about the house." << endl;
+  cout << "Maybe for the better." << endl;
 }
+
 
 // TODO: add your new function definitions here

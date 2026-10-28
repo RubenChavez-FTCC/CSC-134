@@ -178,9 +178,6 @@ void choice_down_stairs() {
   }
 }
 
-void choice_quit_ending() {
-  cout << "You leave the house might be for the better." << endl;
-}
 
 void choice_explore_further() {
   cout << "You move through cobwebs and dusty boxes piled up " << endl;

@@ -27,16 +27,11 @@ void choice_go_home();
 void choice_climb_window();
 void choice_up_stairs();
 void choice_down_stairs();
-
-
 void choice_explore_further();
 void choice_wipe_it_off_ending();
 void choice_go_back_up();
 void choice_front_door_ending();
 void choice_back_door_ending();
-
-
-
 
 
 

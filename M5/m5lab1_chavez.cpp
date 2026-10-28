@@ -28,6 +28,19 @@ void choice_climb_window();
 void choice_up_stairs();
 void choice_down_stairs();
 
+
+void choice_explore_further();
+void choice_wipe_it_off_ending();
+void choice_go_back_up();
+void choice_front_door_ending();
+void choice_back_door_ending();
+
+
+
+
+
+
+
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
   // Start the story.
@@ -63,7 +76,7 @@ void main_menu() {
   if (1 == choice) {
     choice_front_door();
   } else if (2 == choice) {
-    // call choice 2 here
+    choice_back_door();
   } else if (3 == choice) {
       choice_go_home();
   } else if (4 == choice) {
@@ -93,7 +106,8 @@ void choice_front_door() {
 
 
 void choice_back_door() {
-  cout << "The Back door is borded up. " << endl;
+  cout << "You walk to the back door." << endl;
+  cout << "The back door is boarded up. " << endl;
   cout << "You can't get in that way." << endl;
   cout << "However a window is broken." << endl;
   cout << "Do you: " << endl;
@@ -131,19 +145,110 @@ void choice_climb_window() {
 
 }
 
-void choice_up_stairs() {
-  cout << "You go upstairs, your arm is still bleeding and you feel dizzy." << endl;
-  cout << "You see a a blur at the end of the hallway" << endl;
-}
-
-
-
-
 
 void choice_go_home() {
-  cout << "You cut your losses, you had a bad feeling about the house." << endl;
-  cout << "Maybe for the better." << endl;
+  cout << "You leave the house. you had a bad feeling." << endl;
+  cout << "Maybe for the better." << endl; 
+}
+  
+
+
+void choice_up_stairs() {
+  cout << "You go upstairs." << endl;
+  cout << "Your arm starts to bleed out more and you feel dizzy" << endl;
+  cout << "You see something move across the hallway." << endl;
+  cout << "You try backing up slowly you mistep and fall down the stairs." << endl;
+  cout << "You are helpless to get up, you stay there forever the house not letting you leave." << endl;
+}
+
+void choice_down_stairs() {
+  cout << "In a basement of some sorts " << endl;
+  cout << "Arm starts to bleed more, you see a first aid kit " << endl;
+  cout << "You take it and wrap up your arm " << endl;
+  cout << "Do you:" << endl;
+  cout << "1. Go back up" << endl;
+  cout << "2. Explore further" << endl;
+  int choice = 0;
+  cout << "Choose: ";
+  cin >> choice;
+  if (1 == choice) {
+    choice_go_back_up();
+  } else if (2 == choice) {
+    choice_explore_further();
+  }
+}
+
+void choice_quit_ending() {
+  cout << "You leave the house might be for the better." << endl;
+}
+
+void choice_explore_further() {
+  cout << "You move through cobwebs and dusty boxes piled up " << endl;
+  cout << "You reach the end of the room " << endl;
+  cout << "A symbol is drawn on the wall it makes you uneasy" << endl;
+  cout << "Do you:" << endl;
+  cout << "1. Wipe it off" << endl;
+  cout << "2. Go back up" << endl;
+  int choice = 0;
+  cout << "Choose: ";
+  cin >> choice;
+  if (1 == choice) {
+    choice_wipe_it_off_ending();
+  } else if (2 == choice) {
+    choice_go_back_up();
+  }
+}
+
+void choice_wipe_it_off_ending() {
+  cout << "You wipe the symbol." << endl;
+  cout << "You feel normal." << endl;
+  cout << "You walk back." << endl;
+  cout << "You start to breathe heavy" << endl;
+  cout << "It's hard to breathe now" << endl;
+  cout << "You stop." << endl;
+  cout << "You can't move your body." << endl;
+  cout << "You lie down, compelled to lie still." << endl;
+  cout << "The house doesn't let you leave." << endl;
+  cout << "You can't leave your body." << endl;
+}
+
+void choice_go_back_up() {
+  cout << "You are on the first floor, still can't see well." << endl;
+  cout << "You start to breathe heavily " << endl;
+  cout << "You need to get out " << endl;
+  cout << "Do you go to the front door or back?" << endl;
+  cout << "1. Front door" << endl;
+  cout << "2. Back door" << endl;
+  int choice = 0;
+  cout << "Choose: ";
+  cin >> choice;
+  if (1 == choice) {
+    choice_front_door_ending();
+  } else if (2 == choice) {
+    choice_back_door_ending();
+  }
+}
+
+void choice_front_door_ending() {
+  cout << "You rush to the door." << endl;
+  cout << "It's hard to breathe." << endl;
+  cout << "The door won't open." << endl;
+  cout << "You bash the door." << endl;
+  cout << "Nothing budges." << endl;
+  cout << "You are tired, breathing takes more effort than normal." << endl;
+  cout << "Tiredness overcomes you." << endl;
+  cout << "You slide down on the door." << endl;
+  cout << "You close your eyes and drift off." << endl;
+  cout << "The House doesn't let you leave." << endl;
+}
+
+void choice_back_door_ending() {
+  cout << "You start your way to the back door. " << endl;
+  cout << "Your breathing gets harder every step takes more effort. " << endl;
+  cout << "You can hear the wind from the window." << endl;
+  cout << "You throw your body out, fresh air fills your lungs. " << endl;
+  cout << "You made it out and go home." << endl;
 }
 
 
-// TODO: add your new function definitions here
+

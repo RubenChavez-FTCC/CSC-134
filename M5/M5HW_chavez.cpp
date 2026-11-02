@@ -147,10 +147,10 @@ void question5(){
     cin >> hour;
 
 
-    int i = hour;
+    int i = 1;
     while (i <= hour){
 
-    cout << i * speed << endl;
+    cout << i << "_______________" << i * speed << endl;
     i++;
     }
 

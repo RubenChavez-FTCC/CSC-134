@@ -18,8 +18,9 @@ void question4();
 
 int main() {
     //run only questions you finish by moving the comments //
- //question1(); 
- question2(); 
+
+ question1(); 
+// question2(); //DONE
 // question3(); //DONE 
  //question4(); 
 }
@@ -98,3 +99,36 @@ void question2(){
 
 }
 
+void question1(){
+    cout << "question 1 goes here" << endl;
+
+    string month1;
+    double rain1;
+    string month2;
+    double rain2;
+    string month3;
+    double rain3;
+
+    cout << "Average rainfall(in inches) for three months" << endl;
+
+    cout << "Enter month: " << endl;
+    cin >> month1; 
+    cout << "Enter rainfall for " << month1 << endl;
+    cin >> rain1;
+
+    cout << "Enter month: " << endl;
+    cin >> month2; 
+    cout << "Enter rainfall for " << month2 << endl;
+    cin >> rain2;
+
+    cout << "Enter month: " << endl;
+    cin >> month3; 
+    cout << "Enter rainfall for " << month3 << endl;
+    cin >> rain3;
+
+
+    int avg = (rain1 + rain2 + rain3)/3;
+    cout << "The average rainfall for " << month1 << ", " << month2 << " & " << month3 << " Is " << avg << " Inches." << endl;
+
+
+}

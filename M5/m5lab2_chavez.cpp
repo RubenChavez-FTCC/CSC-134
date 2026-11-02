@@ -44,31 +44,33 @@ int main()
    return 0;
 }
 
+
 //***************************************************
 // TODO: write the getLength, getWidth, getArea,    *
 // and displayData functions below.                 *
 //*************************************************
 
 double getLength(){
-    double LENGTH;
+    double LENGTH; // different from normal length 
     cout << "Typer your length: " << endl;
     cin >> LENGTH;
-    return LENGTH;
+    return LENGTH; // returns normal length == LENGTH
 
 }
 
 
 double getWidth(){
-    double WIDTH; // separte from the normal length 
+    double WIDTH; // separte from the normal width 
    cout <<"Type your width: " << endl;
    cin >> WIDTH;
-   return WIDTH; //but gets return to getWidth as length = LENGTH
+   return WIDTH; //but gets return to getWidth as width = WIDTH
 }
 
 double getArea(double length, double width){
     return length * width;
 
 }
+
 
 void displayData(double length, double width, double area){
 

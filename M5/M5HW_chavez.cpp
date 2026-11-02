@@ -31,9 +31,41 @@ void question3(){
     cout << "Type a number between 1-10 to get its romanal nurmel: " << endl;
     cin >> number;
 
+    if (number <= 0 || number>= 11 ){
+        cout << "Number cannot be more than ten or less than one." << endl;
+    }
     if (number == 1){
         cout << "1 is I " << endl;
     }
+    if(number == 2){
+        cout << "2 is II " << endl;
+    }
+     if(number == 3){
+        cout << "3 is III " << endl;
+    }
+     if(number == 4){
+        cout << "4 is IV " << endl;
+    }
+    if(number == 5){
+        cout << "5 is V " << endl;
+    }
+    if(number == 6){
+        cout << "6 is VI " << endl;
+    }
+    if(number == 7){
+        cout << "7 is VII " << endl;
+    }
+    if(number == 8){
+        cout << "8 is VIII " << endl;
+    }
+    if(number == 9){
+        cout << "9 is IX " << endl;
+    }
+    if(number == 10){
+        cout << "10 is X " << endl;
+    }
+  
+
 
 
 

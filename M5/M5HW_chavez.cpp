@@ -15,14 +15,16 @@ void question1();
 void question2();
 void question3();
 void question4();
+void question5();
 
 int main() {
     //run only questions you finish by moving the comments //
 
- question1(); 
+// question1(); //DONE
 // question2(); //DONE
 // question3(); //DONE 
  //question4(); 
+ question5();
 }
 
 void question3(){
@@ -128,7 +130,32 @@ void question1(){
 
 
     int avg = (rain1 + rain2 + rain3)/3;
-    cout << "The average rainfall for " << month1 << ", " << month2 << " & " << month3 << " Is " << avg << " Inches." << endl;
+    cout << "The average rainfall for " << month1 << ", " << month2 << " & " << month3 << " is " << avg << " Inches." << endl;
+
+}
+
+void question5(){
+    cout << "question 5 here " << endl;
+
+    // dist = speed * time
+    double speed;
+    int hour;
+
+    cout << "What is the speed of the vehile in mph?" << endl;
+    cin >> speed;
+    cout << "How many hours has it traveled? " << endl;
+    cin >> hour;
+
+
+    int i = hour;
+    while (i <= hour){
+
+    cout << i * speed << endl;
+    i++;
+    }
+
+    int distance = i*speed;
+    cout << distance << endl;
 
 
 }

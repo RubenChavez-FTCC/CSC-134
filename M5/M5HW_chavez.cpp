@@ -154,8 +154,7 @@ void question5(){
     i++;
     }
 
-    int distance = i*speed;
-    cout << distance << endl;
+
 
 
 }

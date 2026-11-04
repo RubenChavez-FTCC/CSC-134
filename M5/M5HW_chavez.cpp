@@ -215,6 +215,8 @@ void question4(){
 
 }
 
+
+//AI added the input validations for rect, tri, and circle 
 void circle(){
 
     double radius;
@@ -229,7 +231,8 @@ void circle(){
     cout << "The area of the circle is: " << area << endl;
 }
 
-//AI added the input validations for rect, tri, and circle 
+
+
 
 void rectangle(){
 

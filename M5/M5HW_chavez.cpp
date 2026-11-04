@@ -4,7 +4,9 @@
 // M5 homework 
 
 
-// Tier here
+
+
+// SILVER TIER
 
 
 #include <iostream>
@@ -25,11 +27,11 @@ void triangle();
 int main() {
     //run only questions you finish by moving the comments //
 
-// question1(); //DONE
-// question2(); //DONE
-// question3(); //DONE 
- question4(); 
-// question5(); //DONE
+ question1(); //DONE
+ question2(); //DONE
+ question3(); //DONE 
+ question4(); //DONE
+ question5(); //DONE
  //question6();
 
 }
@@ -226,6 +228,8 @@ void circle(){
     area = 3.14 * radius * radius;
     cout << "The area of the circle is: " << area << endl;
 }
+
+//AI added the input validations for rect, tri, and circle 
 
 void rectangle(){
 

@@ -16,6 +16,11 @@ void question2();
 void question3();
 void question4();
 void question5();
+void question6();
+
+void circle();
+void rectangle();
+void triangle();
 
 int main() {
     //run only questions you finish by moving the comments //
@@ -23,8 +28,10 @@ int main() {
 // question1(); //DONE
 // question2(); //DONE
 // question3(); //DONE 
- //question4(); 
- question5();
+ question4(); 
+// question5(); //DONE
+ //question6();
+
 }
 
 void question3(){
@@ -143,16 +150,67 @@ void question5(){
 
     cout << "What is the speed of the vehile in mph?" << endl;
     cin >> speed;
+
+    
+
     cout << "How many hours has it traveled? " << endl;
     cin >> hour;
 
+    if (hour <= -1 || speed <= 0 ){
+        cout << " Cannot be a negative number." << endl;
+        question5();
+    }
+
+    else{
+    cout << "Hour            Distance Traveled" << endl;
+    cout <<"----------------------------------" << endl;
 
     int i = 1;
     while (i <= hour){
 
-    cout << i << "_______________" << i * speed << endl;
+    cout << i << "                " << i * speed << endl;
     i++;
     }
+    }
+
+
+
+
+
+}
+
+void question4(){
+
+    cout << "question 4 here " << endl;
+
+    int choice;
+
+    cout <<"Geometry Calculator " << endl;
+    cout << "1. Calculate the area of a circle " << endl;
+    cout << "2. Calculate the area of a rectangle " << endl;
+    cout << "3. Calculate the area of a triangle " << endl;
+    cout << "4. Quit " << endl; 
+    cout << "Enter choice (1-4): " << endl;
+    cin >> choice;
+    
+     if (1 == choice) {
+    circle();
+  } 
+  else if (2 == choice) {
+    rectangle();
+  }
+   else if (3 == choice) {
+      triangle();
+  }
+   else if (4 == choice) {
+    cout << "Ok, quitting game" << endl;
+    return; // go back to main()
+  }
+  else {
+    cout << "That's not a valid choice, please try again." << endl;
+    return; // try again
+  }
+
 
 
 

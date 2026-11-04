@@ -203,7 +203,7 @@ void question4(){
       triangle();
   }
    else if (4 == choice) {
-    cout << "Ok, quitting game" << endl;
+    cout << "Ok, quitting " << endl;
     return; // go back to main()
   }
   else {
@@ -211,8 +211,64 @@ void question4(){
     return; // try again
   }
 
+}
 
+void circle(){
 
+    double radius;
+    double area;
+    cout << "Enter the radius of the circle: " << endl;
+    cin >> radius;
+    while (radius < 0) {
+        cout << "Radius cannot be negative. Enter the radius again: " << endl;
+        cin >> radius;
+    }
+    area = 3.14 * radius * radius;
+    cout << "The area of the circle is: " << area << endl;
+}
 
+void rectangle(){
+
+    double length;
+    double width;
+    double area;
+    cout << "Enter the length of the rectangle: " << endl;
+    cin >> length;
+    while (length < 0) {
+        cout << "Length cannot be negative. Enter the length again: " << endl;
+        cin >> length;
+    }
+    cout << "Enter the width of the rectangle: " << endl;
+    cin >> width;   
+    while (width < 0) {
+        cout << "Width cannot be negative. Enter the width again: " << endl;
+        cin >> width;
+    }
+
+    area = length * width;
+    cout << "The area of the rectangle is: " << area << endl;
+
+}
+
+void triangle(){
+
+    double base;
+    double height;
+    double area;
+    cout << "Enter the base of the triangle: " << endl;
+    cin >> base;
+    while (base < 0) {
+        cout << "Base cannot be negative. Enter the base again: " << endl;
+        cin >> base;
+    }
+    cout << "Enter the height of the triangle: " << endl;
+    cin >> height;
+    while (height < 0) {
+        cout << "Height cannot be negative. Enter the height again: " << endl;
+        cin >> height;
+    }
+
+    area = 0.5 * base * height;
+    cout << "The area of the triangle is: " << area << endl;
 
 }

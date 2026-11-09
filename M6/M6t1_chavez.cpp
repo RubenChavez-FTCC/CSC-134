@@ -14,8 +14,8 @@ void method3();
 
 int main () {
 
-   // method1();
-   // method2();
+    method1();
+    method2();
     method3(); // range based for loop
     return 0;
 
@@ -73,7 +73,7 @@ void method3() {
     const int SIZE = 5;
     int counts [SIZE] = {0, 0, 0, 0, 0};
     cout << "count pokemon per day " << endl;
-    
+
     // this loop changes the array so it needs & 
     for (int& count: counts){
         cout << ">";

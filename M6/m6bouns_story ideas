@@ -1,0 +1,44 @@
+Prompts: help me brainstorm a story for this text-based story looking at this code, Simple gameplay: be able to search rooms for items, box in logan's room, key in garge, note in kitchen what else would be good to implement, 
+
+
+
+Add: search func, box, box key, car key, note, 
+
+
+Best-fit story concept: “The Missing Memory”
+You arrive at Logan’s house after being away for years. The house feels familiar, but something is off. The dog greets you at the kitchen, the garage is full of old tools and memories, and Logan’s bedroom feels like everyone is still there in spirit.
+
+As you move through the rooms, you discover clues:
+
+In the kitchen: a half-finished meal, a family recipe card, or a note saying “Don’t forget the old key.”
+In the garage: tools and boxes, plus evidence that someone was preparing to leave in a hurry.
+In the bedroom: family photos, a journal, or a letter revealing that Logan is missing.
+Outside: the front yard or driveway where a final clue points to the truth.
+
+ok and talan is evil and the reason why logan is missing: Logan is missing find out why
+ 
+    When the player types search in a room:
+
+kitchen → finds note
+garage → finds key
+Logan’s room → finds box
+other rooms → a false clue like a number code or something like that
+
+    search
+    kitchen gets note -> tells about key for logan box 
+    garage -> finds box key
+    outside can't leave yet, but sees car needs car key
+    bedroom finds box needs key, box gives car keys
+
+
+    This is the most important mechanic to add.
+Room descriptions that change
+Once the player searches a room, the description can change:
+
+Before search: “The kitchen is quiet.”
+After search: “On the counter, you find a note tucked under a mug.”
+
+
+
+
+

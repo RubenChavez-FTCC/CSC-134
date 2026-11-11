@@ -90,3 +90,4 @@ void method3() {
     avg = (double) total / SIZE;
     cout << "total: " << total << endl << "AVG: " << avg << endl;
 }
+

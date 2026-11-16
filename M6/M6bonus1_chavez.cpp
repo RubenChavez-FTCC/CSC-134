@@ -56,6 +56,11 @@ BOX_KEY,
 BOX_NOTE,
 NUM_ITEMS
 };
+
+void searchRoom(int room, const string itemNames[], 
+const int itemRooms[], bool itemFound[]);
+
+
 int main() {
 // ============================================================
 // PART 2: ROOM DATA (parallel arrays)
@@ -165,7 +170,10 @@ break;
 // TRY: type NORTH in capital letters. Why does it fail?
 // STRETCH: the four direction blocks repeat the same idea.
 // Can you replace them with one loop over DIRECTION_NAMES?
-if (command == "north" || command == "n") {
+if (command == "search"){
+    searchRoom(currentRoom, itemNames, itemRooms, itemFound);
+}
+else if (command == "north" || command == "n") {
 if (connections[currentRoom][NORTH] != -1) {
 currentRoom = connections[currentRoom][NORTH]; // move to the new room
 } else {
@@ -199,4 +207,21 @@ cout << "I don't understand that command." << endl;
 // EDIT: write your own goodbye.
 cout << "Thanks for playing!" << endl;
 return 0;
+}
+
+void searchRoom(int room, const string itemNames[],
+const int itemRooms[], bool itemFound[]) {
+    bool foundSomething = false;
+
+    for (int i = 0; i < NUM_ITEMS; i++) {
+        if (itemRooms[i] == room && !itemFound[i]) {
+            cout << "You found the " << itemNames[i] << "!" << endl;
+            itemFound[i] = true;
+            foundSomething = true;
+        }
+    }
+    if (!foundSomething){
+        cout << "You don't find anything new here. " << endl;
+    }
+
 }

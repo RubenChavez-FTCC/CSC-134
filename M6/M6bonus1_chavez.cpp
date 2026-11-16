@@ -58,7 +58,7 @@ NUM_ITEMS
 };
 
 void searchRoom(int room, const string itemNames[], 
-const int itemRooms[], bool itemFound[]);
+const string itemDescriptions[], const int itemRooms[], bool itemFound[]);
 
 
 int main() {
@@ -99,6 +99,17 @@ int itemRooms[NUM_ITEMS] = {KITCHEN, BEDROOM, GARAGE, -1};
 [[maybe_unused]] int itemContainers[NUM_ITEMS] = {-1, -1, -1, BOX};
 
 bool itemFound[NUM_ITEMS] = {false}; 
+
+
+string itemDescriptions[NUM_ITEMS] = {
+    "The note mentions a locked box in Logan's bedroom",
+    "The dusty box has a keyhole. It needs a key",
+    "This key might fit the box in Logan's bedroom",
+    "The note says dont trust Talan run away from here ",
+};
+
+
+
 // ============================================================
 // PART 3: THE MAP (a 2D array)
 // connections[from_room][direction] holds the room you reach.
@@ -171,7 +182,7 @@ break;
 // STRETCH: the four direction blocks repeat the same idea.
 // Can you replace them with one loop over DIRECTION_NAMES?
 if (command == "search"){
-    searchRoom(currentRoom, itemNames, itemRooms, itemFound);
+    searchRoom(currentRoom, itemNames, itemDescriptions, itemRooms, itemFound);
 }
 else if (command == "north" || command == "n") {
 if (connections[currentRoom][NORTH] != -1) {
@@ -210,12 +221,13 @@ return 0;
 }
 
 void searchRoom(int room, const string itemNames[],
-const int itemRooms[], bool itemFound[]) {
+const string itemDescriptions[], const int itemRooms[], bool itemFound[]) {
     bool foundSomething = false;
 
     for (int i = 0; i < NUM_ITEMS; i++) {
         if (itemRooms[i] == room && !itemFound[i]) {
             cout << "You found the " << itemNames[i] << "!" << endl;
+            cout << itemDescriptions[i] << endl;
             itemFound[i] = true;
             foundSomething = true;
         }

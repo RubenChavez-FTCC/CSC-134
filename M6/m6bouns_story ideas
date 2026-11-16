@@ -1,4 +1,9 @@
-Prompts: help me brainstorm a story for this text-based story looking at this code, Simple gameplay: be able to search rooms for items, box in logan's room, key in garge, note in kitchen what else would be good to implement, ok lets add items firtst before searching. We need note in kitchen, box in bedroom, box key in garge, box note in the box, Dont add code, I want to add a search func that gets the items, then I want to open box with box-key to get the note inside the box, then we have to go outside with the note inside the box to get the ending, show example code of the ideas, don't add all at once go part by part to make it easier, Now I want to add descriptions for each item giving players hint on what to do with them, add 2. pass the descriptions into the code, 
+Prompts: help me brainstorm a story for this text-based story looking at this code,
+ Simple gameplay: be able to search rooms for items, box in logan's room, key in garge, note in kitchen what else would be good to implement, 
+ ok lets add items firtst before searching. We need note in kitchen, box in bedroom, box key in garge, box note in the box, 
+ Dont add code, I want to add a search func that gets the items, then I want to open box with box-key to get the note inside the box, then we have to go outside with the note inside the box to get the ending, show example code of the ideas, don't add all at once go part by part to make it easier, 
+ Now I want to add descriptions for each item giving players hint on what to do with them, add 2. pass the descriptions into the code, 
+ Now we add opening the box with box key and getting box note, again do it piece by piece, Now we got to add the ending, it should check if you have box note then you have to go outside, then it shows ending screen, 
 
 
 

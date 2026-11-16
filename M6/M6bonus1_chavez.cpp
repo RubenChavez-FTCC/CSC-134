@@ -105,7 +105,7 @@ string itemDescriptions[NUM_ITEMS] = {
     "The note mentions a locked box in Logan's bedroom",
     "The dusty box has a keyhole. It needs a key",
     "This key might fit the box in Logan's bedroom",
-    "The note says dont trust Talan run away from here ",
+    "The note says dont trust Talan run away from here, NOW!",
 };
 
 
@@ -152,6 +152,13 @@ bool gameRunning = true; // KEEP: the loop runs while this is true
 // Step 4: repeat, unless gameRunning is false.
 // ============================================================
 while (gameRunning) {
+if (currentRoom == OUTSIDE && itemFound[BOX_NOTE]) {
+cout << "\n========== ENDING ==========" << endl;
+cout << "You step outside with the note and learn that Talan is behind Logan's disappearance." << endl;
+cout << "You have uncovered the truth." << endl;
+cout << "========== THE END ==========" << endl;
+break;
+}
 // Step 1: show the room.
 cout << "\nYou are in the " << roomNames[currentRoom] << endl;
 cout << roomDescriptions[currentRoom] << endl;
@@ -183,6 +190,21 @@ break;
 // Can you replace them with one loop over DIRECTION_NAMES?
 if (command == "search"){
     searchRoom(currentRoom, itemNames, itemDescriptions, itemRooms, itemFound);
+}
+else if (command == "open") {
+    if (currentRoom != BEDROOM) {
+        cout << "There is no box here to open." << endl;
+    } else if (!itemFound[BOX]) {
+        cout << "Search the bedroom to find the box first." << endl;
+    } else if (!itemFound[BOX_KEY]) {
+        cout << "The box is locked. You need the box key." << endl;
+    } else if (itemFound[BOX_NOTE]) {
+        cout << "The box is already open." << endl;
+    } else {
+        itemFound[BOX_NOTE] = true;
+        cout << "You unlock the box and find the note inside!" << endl;
+        cout << itemDescriptions[BOX_NOTE] << endl;
+    }
 }
 else if (command == "north" || command == "n") {
 if (connections[currentRoom][NORTH] != -1) {

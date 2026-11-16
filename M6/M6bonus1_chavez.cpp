@@ -105,7 +105,7 @@ string itemDescriptions[NUM_ITEMS] = {
     "The note mentions a locked box in Logan's bedroom",
     "The dusty box has a keyhole. It needs a key",
     "This key might fit the box in Logan's bedroom",
-    "The note says dont trust Talan run away from here, NOW!",
+    "The note says Talan is behind this, I'm getting closer to the truth if you are reading this RUN NOW!",
 };
 
 

@@ -1,8 +1,8 @@
-Prompts: help me brainstorm a story for this text-based story looking at this code, Simple gameplay: be able to search rooms for items, box in logan's room, key in garge, note in kitchen what else would be good to implement, 
+Prompts: help me brainstorm a story for this text-based story looking at this code, Simple gameplay: be able to search rooms for items, box in logan's room, key in garge, note in kitchen what else would be good to implement, ok lets add items firtst before searching. We need note in kitchen, box in bedroom, box key in garge, box note in the box, Dont add code, I want to add a search func that gets the items, then I want to open box with box-key to get the note inside the box, then we have to go outside with the note inside the box to get the ending, show example code of the ideas, don't add all at once go part by part to make it easier
 
 
 
-Add: search func, box, box key, car key, note, 
+Add: search func, box, box key, kit-note, box-note, searched room descriptions 
 
 
 Best-fit story concept: “The Missing Memory”
@@ -10,7 +10,7 @@ You arrive at Logan’s house after being away for years. The house feels famili
 
 As you move through the rooms, you discover clues:
 
-In the kitchen: a half-finished meal, a family recipe card, or a note saying “Don’t forget the old key.”
+In the kitchen:  a note saying “Don’t forget the old key.”
 In the garage: tools and boxes, plus evidence that someone was preparing to leave in a hurry.
 In the bedroom: family photos, a journal, or a letter revealing that Logan is missing.
 Outside: the front yard or driveway where a final clue points to the truth.
@@ -20,15 +20,14 @@ ok and talan is evil and the reason why logan is missing: Logan is missing find 
     When the player types search in a room:
 
 kitchen → finds note
-garage → finds key
+garage → finds box key
 Logan’s room → finds box
-other rooms → a false clue like a number code or something like that
+Outside -> no item but needs box-note to leave
 
     search
     kitchen gets note -> tells about key for logan box 
     garage -> finds box key
-    outside can't leave yet, but sees car needs car key
-    bedroom finds box needs key, box gives car keys
+    outside can't leave yet, but when box note is found can leave
 
 
     This is the most important mechanic to add.

@@ -49,6 +49,13 @@ OUTSIDE,
 // ATTIC, // EXAMPLE 1 of 4
 NUM_ROOMS // KEEP: always the last name
 };
+enum Item {
+NOTE,
+BOX,
+BOX_KEY,
+BOX_NOTE,
+NUM_ITEMS
+};
 int main() {
 // ============================================================
 // PART 2: ROOM DATA (parallel arrays)
@@ -73,19 +80,20 @@ string roomNames[NUM_ROOMS] = {
 // compiler warn you? What does the game print for that room?
 string roomDescriptions[NUM_ROOMS] = {
 "You enter in the house of Logan. It gives you a sense of nostalgia and warmth.",
-"It's quiet, usually The dog comes and greets you but he's not here. There's nothing be made right now",
-"The garage is filled with heaps of tools, decor, and some seats for everyone to seat down but they aren't here.",
-"In Logan's bedroom you see a livley room, everyone is here.",
+"It's quiet, usually The dog comes and greets you but he's not here. There's nothing being made right now but there is a mug on the counter.",
+"The garage is filled with heaps of tools, decor, and some seats for everyone to sit down but they aren't here.",
+"In Logan's bedroom you see a livley room, but no one to enjoy. ",
 "You open the garage door and see the outside. The cool breeze chills your bones, you want to warm up inside. You Logan's car is parked outside, its dusty it hasn't left for a while.",
 // "A cramped attic. Sunlight comes through one small window.", 
 //EXAMPLE 3 of 4
 };
 
-// BONUS: objects. Use two more parallel arrays, the same way:
-// string itemNames[NUM_ITEMS] = {"lamp", "key"};
-// int itemRoom[NUM_ITEMS] = {KITCHEN, BASEMENT};
-// itemRoom[i] holds the room number where item i is.
-// You also need an enum Item that ends with NUM_ITEMS.
+// Item data uses matching indexes across these arrays.
+string itemNames[NUM_ITEMS] = {"note", "box", "box key", "note inside the box"};
+int itemRooms[NUM_ITEMS] = {KITCHEN, BEDROOM, GARAGE, -1};
+[[maybe_unused]] int itemContainers[NUM_ITEMS] = {-1, -1, -1, BOX};
+
+bool itemFound[NUM_ITEMS] = {false}; 
 // ============================================================
 // PART 3: THE MAP (a 2D array)
 // connections[from_room][direction] holds the room you reach.

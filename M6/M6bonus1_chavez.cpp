@@ -2,6 +2,10 @@
 // chavez ruben
 // 11/11/2026
 
+//HW tier 
+
+
+
 
 // m6lab2_0002.cpp - Text adventure starter, version 2
 //

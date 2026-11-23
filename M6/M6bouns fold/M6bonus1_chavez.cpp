@@ -8,18 +8,8 @@
 
 
 // m6lab2_0002.cpp - Text adventure starter, version 2
-//
-// You will use: enums, arrays, parallel arrays, a 2D array, and a game loop.
-//
-// HOW TO READ THE COMMENTS
-// EDIT: change this line to make the game your own.
-// KEEP: the game needs this line as it is.
-// TRY: a question. Predict the answer. Then run the program to check.
-// AI: reserved for you. Use it to cite AI help, as the assignment says.
-//
-// Compile and run:
-// g++ -std=c++17 -Wall -Wextra m6lab2_0002.cpp -o adv
-// ./adv
+
+
 // assitied by GPT luna and Chavez
 
 #include <iostream>
@@ -79,22 +69,17 @@ string roomNames[NUM_ROOMS] = {
 "Garage",
 "Bedroom",
 "Outside",
-//partly logan house 
 
-
-// "Attic", // EXAMPLE 2 of 4
 };
 // ADD A ROOM, step 3 of 4: add the new description at the end.
-// TRY: make this list one item shorter than NUM_ROOMS. Does the
-// compiler warn you? What does the game print for that room?
+// TRY: make this list one item shorter than NUM_ROOMS. 
 string roomDescriptions[NUM_ROOMS] = {
 "You enter in the house of Logan. It gives you a sense of nostalgia and warmth.",
 "It's quiet, usually The dog comes and greets you but he's not here. There's nothing being made right now but there is a mug on the counter.",
 "The garage is filled with heaps of tools, decor, and some seats for everyone to sit down but they aren't here.",
-"In Logan's bedroom you see a livley room, but no one to enjoy. ",
-"You open the garage door and see the outside. The cool breeze chills your bones, you want to warm up inside. You Logan's car is parked outside, its dusty it hasn't left for a while.",
-// "A cramped attic. Sunlight comes through one small window.", 
-//EXAMPLE 3 of 4
+"In Logan's bedroom you see a lively room, but no one to enjoy. ",
+"You open the garage door and see the outside. The cool breeze chills your bones, you want to warm up inside. Logan's car is parked outside, its dusty it hasn't left for a while.",
+
 };
 
 // Item data uses matching indexes across these arrays.
@@ -164,6 +149,7 @@ cout << "========== THE END ==========" << endl;
 break;
 }
 // Step 1: show the room.
+
 cout << "\nYou are in the " << roomNames[currentRoom] << endl;
 cout << roomDescriptions[currentRoom] << endl;
 // Step 1, continued: show the exits.

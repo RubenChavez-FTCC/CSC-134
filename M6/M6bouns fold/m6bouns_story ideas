@@ -5,9 +5,15 @@ Prompts: help me brainstorm a story for this text-based story looking at this co
  Now I want to add descriptions for each item giving players hint on what to do with them, add 2. pass the descriptions into the code, 
  Now we add opening the box with box key and getting box note, again do it piece by piece, Now we got to add the ending, it should check if you have box note then you have to go outside, then it shows ending screen, 
 
-
+11/23 prompts: what is doing the repeat saying, for example: in kitchen, search, in kitchen, cant go that way, in kitchen. Is there a way to fix this? *havent changed anything yet*
 
 Add: search func, box, box key, kit-note, box-note, searched room descriptions 
+
+11/23 ->  done with items, search, and room descriptions, *brainstorm how to make it better for final project:*
+
+11/23 -> 1. better opening, show controls, 2. possible new room, false clue possible, 
+3. fixing repeating elements -> in kitchen, search, in kitchen, cant go that way, in kitchen 
+
 
 
 Best-fit story concept: “The Missing Memory”
@@ -33,16 +39,6 @@ Outside -> no item but needs box-note to leave
     kitchen gets note -> tells about key for logan box 
     garage -> finds box key
     outside can't leave yet, but when box note is found can leave
-
-
-
-// for final project
-    This is the most important mechanic to add.
-Room descriptions that change
-Once the player searches a room, the description can change:
-
-Before search: “The kitchen is quiet.”
-After search: “On the counter, you find a note tucked under a mug.” 
 
 
 

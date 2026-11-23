@@ -1,7 +1,7 @@
 # Project Proposal: *Where is Logan?*
 
 **Course:** CSC 134  
-**Author:** Ruben Chavez  
+**Author:** Ruben Chavez and Gemini  
 **Date:** November 11, 2026  
 **Source File:** `m6lab2_0002.cpp`  
 
